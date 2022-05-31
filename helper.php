@@ -98,15 +98,15 @@ $helper = new Helper();
 // }
 
 // 3: Write a function to accept a parameter to charge any amount of money
-$data = [
-    'amount' => '1110',
-    'currency' => 'usd',
-    'description' => 'Test Charge',
-    'card_number' => '4242424242424242',
-    'exp_month' => '08',
-    'exp_year' => '2022',
-    'cvc' => '123',
-];
+// $data = [
+//     'amount' => '1110',
+//     'currency' => 'usd',
+//     'description' => 'Test Charge',
+//     'card_number' => '4242424242424242',
+//     'exp_month' => '08',
+//     'exp_year' => '2022',
+//     'cvc' => '123',
+// ];
 
 // try {
 //     $charge = $helper->charge($data);
