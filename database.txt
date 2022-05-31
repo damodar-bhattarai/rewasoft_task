@@ -1,0 +1,14 @@
+1. Write a query to get the number of customers who have  more than two orders?
+
+-> SELECT c.customerNumber,c.customerName,COUNT(o.orderNumber) as `Total Orders` FROM customers c JOIN orders o ON c.customerNumber=o.customerNumber GROUP BY c.customerNumber HAVING COUNT(o.orderNumber)>2;
+
+
+2. Write a query to get order numbers, the number of items sold per order, and total sales for
+each from the orderdetails table that have sales more than 1000
+
+-> SELECT o.orderNumber, SUM(od.quantityOrdered) as `items sold per order`, SUM(od.priceEach*od.quantityOrdered) as `Total Sales` FROM orders o JOIN orderdetails od ON o.orderNumber=od.orderNumber GROUP BY od.productCode HAVING `Total Sales` > 1000;
+
+
+3. Write a query to return the employees who work in the offices located in the US.
+
+-> SELECT e.*, o.country as `Office Location` FROM employees e JOIN offices o ON e.officeCode=o.officeCode WHERE o.country="USA";
