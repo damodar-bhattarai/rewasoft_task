@@ -3,7 +3,7 @@ Answers of Stripe &amp; MySQL database task
 
 database.txt file contains the answers of mysql questions.
 
-# stripe task solutions
+# stripe task test data
 
 1. Connect the stripe token by using Stripe-PHP sdk.
 
